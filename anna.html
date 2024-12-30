@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sorry</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #000;
+            overflow: hidden;
+        }
+
+        .heart {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            width: 100px;
+            height: 160px;
+            background: red;
+            border-radius: 100px 100px 0 0;
+        }
+
+        .heart::before {
+            left: 100px;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+
+        .heart::after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+
+        @keyframes heartbeat {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+
+        h1 {
+            position: absolute;
+            top: 10%;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+        }
+        h2 {
+            position: absolute;
+            top: 80%;
+            color: white;
+            font-family: Arial, sans-serif;
+            font-size: 4rem;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>YOU'LL ALWAYS BE MY 1 :)</h1>
+    <h2>{0, ANNA, 2}</h2>
+<P> 
+    .
+</P>
+    <div class="heart"></div>
+</body>
+</html>
