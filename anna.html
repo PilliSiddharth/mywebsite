@@ -1,79 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sorry</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year</title>
     <style>
-        body {
-            margin: 0;
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #000;
-            overflow: hidden;
-        }
-
-        .heart {
-            position: relative;
-            width: 200px;
-            height: 200px;
-            animation: heartbeat 1.5s ease-in-out infinite;
-        }
-
-        .heart::before,
-        .heart::after {
-            content: '';
-            position: absolute;
-            width: 100px;
-            height: 160px;
-            background: red;
-            border-radius: 100px 100px 0 0;
-        }
-
-        .heart::before {
-            left: 100px;
-            transform: rotate(-45deg);
-            transform-origin: 0 100%;
-        }
-
-        .heart::after {
-            left: 0;
-            transform: rotate(45deg);
-            transform-origin: 100% 100%;
-        }
-
-        @keyframes heartbeat {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.2); }
-            100% { transform: scale(1); }
-        }
-
-        h1 {
-            position: absolute;
-            top: 10%;
-            color: white;
+        #message {
+            display: none;
             font-family: Arial, sans-serif;
-            font-size: 4rem;
-            text-transform: uppercase;
-            letter-spacing: 8px;
-        }
-        h2 {
-            position: absolute;
-            top: 80%;
-            color: white;
-            font-family: Arial, sans-serif;
-            font-size: 4rem;
-            text-transform: uppercase;
-            letter-spacing: 8px;
+            text-align: center;
+            margin-top: 50px;
+            font-size: 1.2em;
+            color: #333;
         }
     </style>
 </head>
 <body>
-    <h1>YOU'LL ALWAYS BE MY 1 :)</h1>
-    <h2>{0, ANNA, 2}</h2>
-<P> 
-    .
-</P>
-    <div class="heart"></div>
+    <div id="message">
+        Ahhh man, well few more mins and we’re gonna enter 2025…ik we talked about this a lot but it still feels weird entering 2025, the concept of entering adulthood, all these goddamn exams, shit ton of college apps, and fear of where im gonna make it. Lmfao funnily my 10th grade self was losing his mind over the boards and now i don’t feel like more worried about academics than i am about myself. I did a lot of stuff growing up like yk coding, projects, and stuff like that…and the college decisions im gonna get in few days will sum up if any of those were worthy to get me admission i mean if they were’nt i wouldnt be disappointed coz i for a fact know i can do a lot of crazy stuff than being disappointed college apps…this year was well, to put in few words was scarily amusing? There were moments omg which I never would have thought could have ever happened if i asked my 11th grade self…i mean my 11th grade self would like so screaming with his lungs, if he knew all the shit i did this year…and out of all them, the most meaningful, amazing, and attaching thing happend was meeting you. Lmfao i genuinely fell for you like a storm bro. You might still ask why did I fall that quick, don’t. I’m a hopeless romantic like yk, and making a conversation with you felt right. Like it felt in a way, wow someone i can talk to and they understand me. I’ve had a issue for awhile where sure playfully i can talk to people with my weird humor shit…but what about the times when im ok? I can’t just hide a humor plaster, i wanna express stuff…and your the only person I found, and im glad I did…there were super dark moments this year, and sure i fucking had a mental breakdown over most of it..but it felt comforting knowing there was someone i cry out my mental breakdowns to. Anna you are special for me, and you always will be. Like omg the luck i needed to get a person like you be with me feels insane…your the one giving reality checks, your the one helping me out when i didn’t feel like myself…your the one who always brings out a smile in me. Thank you for that. Idk what else to say, like you did more on me than anyone imaginable could have done. As 2025 is approaching, i know you still have these doubts about how long this would last, but if it does or doesn’t i will always cherish my memories with you. And know that you are the best person i met in 2025. Happy new year anna. :)
+    </div>
+
+    <script>
+        const today = new Date();
+        const messageDiv = document.getElementById("message");
+        if (today.getFullYear() === 2025 && today.getMonth() === 0 && today.getDate() === 1) {
+            messageDiv.style.display = "block";
+        }
+    </script>
 </body>
 </html>
